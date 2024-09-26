@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Number Generator</title>
+</head>
+<body>
+    <h1>Generate Prime Numbers for input n</h1>
+    <form method="post" action="{% url 'output_page' %}">
+        {% csrf_token %}
+        <label for="number">Enter a number:</label>
+        <input type="number" name="number" id="number" required>
+        <button type="submit">Find Primes</button>
+    </form>
+</body>
+</html>

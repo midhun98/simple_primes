@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime Numbers Result</title>
+</head>
+<body>
+    <h1>Prime Numbers less than or equal to {{ number }}</h1>
+    <ul>
+        {% for prime in primes %}
+            <li>{{ prime }}</li>
+        {% empty %}
+            <li>No primes found</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'input_page' %}">Check another number</a>
+</body>
+</html>
