@@ -26,6 +26,9 @@ SECRET_KEY = "django-insecure-ifd!bjvwxx^gg2kx-$_xbl_8@lyq#(*rw8huiw20manf@dpp99
 DEBUG = True
 
 ALLOWED_HOSTS = ['simpleprimes-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    'https://simpleprimes-production.up.railway.app',
+]
 
 
 # Application definition
