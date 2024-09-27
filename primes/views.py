@@ -6,7 +6,9 @@ from django.urls import reverse
 def primes(number):
     prime_list = []
     if number < 2:
-        return []
+        return ["Enter a number greater than 1"]
+    if number > 10000:
+        return ["Enter a number less than 10000"]
     for n in range(2, number + 1):
         for i in range(2, n):
             if n % i == 0:
