@@ -14,3 +14,4 @@ docker build -t simple-primes-app-image .
 ```
 docker-compose up -d
 ```
+
